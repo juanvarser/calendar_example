@@ -1,0 +1,6 @@
+= week_calendar number_of_weeks:1, attribute: :date,                         
+events: @events do |date,events|
+  %small= date.strftime("%d%m")
+  - events.each do |event|
+    %small 
+      =event.name
